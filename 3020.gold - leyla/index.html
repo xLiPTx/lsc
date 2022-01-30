@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Short Cuts</title>
+    <link rel="icon" href="icons/shortcut1.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <div class="searchBx">
+          <input type="text" name="" class="query" value="" />
+          <div class="icons">
+            <div>
+              <img src="googlesearch/images/search.png" alt="search" />
+            </div>
+            <div><img src="googlesearch/images/mic.png" alt="search" /></div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="searchBtn">Google Search</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      let query = document.querySelector(".query");
+      let searchBtn = document.querySelector(".searchBtn");
+
+      searchBtn.onclick = function () {
+        let url = "https://www.google.com/search?q=" + query.value;
+        window.open(url);
+      };
+    </script>
+    <main>
+      <div>
+        <ul>
+          <li class="one">
+            <a href="https://mail.google.com/mail/u/5/#inbox" target="_blank">
+              <img src="images/gmail.png" alt="gmail" />
+            </a>
+          </li>
+          <li class="two">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/youtube.png" alt="youtube" />
+            </a>
+          </li>
+          <li class="three">
+            <a href="https://www.showbie.com/" target="_blank">
+              <img src="images/showbie.png" alt="showbie" />
+            </a>
+          </li>
+          <li class="four">
+            <a
+              href="https://www.satchelone.com/login"
+              target="_blank"
+            >
+              <img src="images/smhw.png" alt="smhw" />
+            </a>
+          </li>
+          <li class="five">
+            <a
+              href="https://outlook.live.com/owa/"
+              target="_blank"
+            >
+              <img src="images/outlook0000.png" alt="outlook" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+        <a href="https://www2.hm.com/en_gb/ladies.html" target="_blank">
+          <img class="bottom" src="images/h&m.png" alt="h&m" />
+        </a>
+        <a href="https://www.amazon.co.uk/" target="_blank">
+          <img class="bottom" src="images/amazon.png" alt="amazon" />
+        </a> 
+        <a href="https://www.ebay.co.uk/" target="_blank">
+          <img class="bottom" src="images/ebay.png" alt="ebay" />
+        </a>
+        <a href="https://www.asos.com/women/" target="_blank">
+          <img class="bottom" src="images/asos.png" alt="asos" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img class="bottom" src="images/facebook.png" alt="facebook" />
+        </a>
+        <a href="tictactoe/index.html" target="_blank">
+          <img class="bottom" src="images/tictactoe.png" alt="tictactoe" />
+        </a>
+        <a href="calculator/index.html" target="_blank">
+          <img class="bottom" src="images/calculator icon.png" alt="calculator" />
+        </a>
+    </footer>
+  </body>
+</html>
